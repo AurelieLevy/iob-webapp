@@ -10,6 +10,7 @@
 
   /** @ngInject */
   function routeConfig($stateProvider) {
+
     $stateProvider
         .state('dashboard', {
           url: '/dashboard',

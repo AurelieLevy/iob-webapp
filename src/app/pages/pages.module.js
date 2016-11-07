@@ -7,7 +7,8 @@
 
   angular.module('BlurAdmin.pages', [
     'ui.router',
-
+    'iobirds.pages.birds',
+    /*
     'BlurAdmin.pages.dashboard',
     'BlurAdmin.pages.ui',
     'BlurAdmin.pages.components',
@@ -16,13 +17,15 @@
     'BlurAdmin.pages.charts',
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
+    */
   ])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/birds');
 
+/*
     baSidebarServiceProvider.addStaticItem({
       title: 'Pages',
       icon: 'ion-document',
@@ -57,6 +60,9 @@
         }]
       }]
     });
+  */
+
   }
+  
 
 })();
